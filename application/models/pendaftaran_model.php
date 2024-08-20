@@ -11,4 +11,9 @@ class pendaftaran_model extends CI_Model {
         $this->db->insert('tb_pendaftaran', $data);
     }
 
+    public function deletePeserta($id) {
+        $this->db->where($id);
+        $this->db->delete('tb_pendaftaran');
+    }
+
 }

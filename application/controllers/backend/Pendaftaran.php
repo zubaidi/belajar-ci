@@ -35,4 +35,10 @@ class pendaftaran extends CI_Controller {
         redirect('backend/pendaftaran/index');
     }
 
+    public function hapus_peserta($id) {
+        $where = array('id' => $id);
+        $this->pendaftaran_model->deletePeserta($where);
+        redirect('backend/pendaftaran/index');
+    }
+
 }
