@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.title {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: #ffffff;
+    background-color: #d4a373;
+}
+.main {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: #d4a373;
+}
+form {
+    margin-top: 70px;
+    color: black;
+}
+.user-box {
+    position: relative;
+}
+input[type=text],[type=password],[type=number],[type=date], select {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccd5ae;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+}
+input[type=text]:focus{
+    border: 2px #bc6c25;
+}
+/* input[type=password]{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 2px solid #ccd5ae;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+} */
+.signin {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #d4a373;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+}
+.forgetpass {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #bc6c25;
+    font-weight: bolder;
+    font-size: 14px;
+}
+p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #bc6c25;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+/* navigasi */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #d4a373;
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    overflow: auto;
+}
+/* li {
+    float: left;
+} */
+li a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+/* li a:hover {
+    background-color: #dda15e;
+} */
+.title-data {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: start;
+    margin-bottom: 0px;
+}
+.btn-event {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #bc6c25;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #bc6c25;
+    color: white;
+}
+.tb-aksi {
+    width: 15%;
+    justify-content: center;
+    text-align: center;
+}
+.btn-edit {
+    border: none;
+    background-color: coral;
+    height: 30px;
+    width: 50px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.btn-hapus {
+    border: none;
+    background-color: rgb(230, 28, 28);
+    height: 30px;
+    width: 50px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.btn-simpan {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #38a3a5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+  
