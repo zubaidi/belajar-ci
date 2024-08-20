@@ -41,4 +41,27 @@ class pendaftaran extends CI_Controller {
         redirect('backend/pendaftaran/index');
     }
 
+    public function edit_peserta($id) {
+        $data['peserta_data'] = $this->pendaftaran_model->getDataPesertaById($id);
+        $data['nama_event'] = $this->event_model->tampilNamaEvent();
+        if(!$data['peserta_data']) show_404();
+        $this->load->view('templete/header');
+        $this->load->view('templete/sidebar');
+        $this->load->view('v_backend/v_edit_pendaftar',$data);
+    }
+
+    public function edit_peserta_aksi($id) {
+        $data = array (
+            'id_lomba' => $this->input->post('idlomba'),
+            'nama_pendaftar' => $this->input->post('namapeserta'),
+            'kelas' => $this->input->post('kelas'),
+            'no_hp' => $this->input->post('notelp'),
+            'tgl_daftar' => $this->input->post('tgldaftar')
+        );  
+        $this->event_model->updatePeserta($data, $id);
+        $this->session->set_flashdata('pesan','Data Berhasil diupdate');
+        redirect('backend/pendaftaran/index');
+    }
+
+
 }

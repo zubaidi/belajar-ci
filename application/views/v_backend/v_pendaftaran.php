@@ -25,7 +25,7 @@
                     <td><?php echo $row->no_hp; ?></td>
                     <td><?php echo $row->tgl_daftar; ?></td>
                     <td class="tb-aksi">
-                        <a href="<?= base_url('backend/event/edit_event/'.$row->id)?>"><button class="btn-edit">Edit</button>
+                        <a href="<?= base_url('backend/pendaftaran/edit_peserta/'.$row->id)?>"><button class="btn-edit">Edit</button>
                         <a href="<?= base_url('backend/pendaftaran/hapus_peserta/'.$row->id)?>"><button class="btn-hapus">Hapus</button></a>
                     </td>
                 </tr>

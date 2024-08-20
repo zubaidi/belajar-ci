@@ -11,7 +11,7 @@
                 <input type="text" id="namaevent" name="namaevent" value="<?= $event_data->nama; ?>">
                 <label for="event">Penyelenggara</label>
                 <input type="text" id="penyelenggara" name="penyelenggara" value="<?= $event_data->penyelenggara; ?>">
-                <button class="btn-simpan">SIMPAN DATA</button>
+                <button class="btn-simpan">UPDATE DATA</button>
             </form>
         </div>
     </div>
