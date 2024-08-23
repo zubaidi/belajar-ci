@@ -21,7 +21,11 @@ class Login extends CI_Controller {
         );
         $cek = $this->user_model->login($where);
         if ($cek->num_rows() > 0) {
-            $this->session->set_userdata(['nama' => $this->user_model->getUserName($username)]);
+            $data_session = $cek->row_array();
+            $userdata = array(
+                'nama' => $data_session['nama']
+            );
+            $this->session->set_userdata($userdata);
             redirect('backend/admin/index');
         } else {
             echo 'username / password salah';
