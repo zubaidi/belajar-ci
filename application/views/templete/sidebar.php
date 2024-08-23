@@ -5,7 +5,7 @@
             <li><a href="<?= base_url('backend/admin') ?>">Dashboard</a></li>
             <li><a href="<?= base_url('backend/pendaftaran') ?>">Pendaftaran</a></li>
             <li><a href="<?= base_url('backend/event') ?>">Data Event</a></li>
-            <li><a href="#">User</a></li>
-            <li><a href="<?= base_url('login') ?>">Logout</a></li>
+            <li><a href="<?= base_url('backend/user') ?>">User</a></li>
+            <li><a href="<?= base_url('login/logout') ?>">Logout</a></li>
         </ul>
     </div>

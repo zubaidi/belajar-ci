@@ -58,7 +58,7 @@ class pendaftaran extends CI_Controller {
             'no_hp' => $this->input->post('notelp'),
             'tgl_daftar' => $this->input->post('tgldaftar')
         );  
-        $this->event_model->updatePeserta($data, $id);
+        $this->pendaftaran_model->updatePeserta($data, $id);
         $this->session->set_flashdata('pesan','Data Berhasil diupdate');
         redirect('backend/pendaftaran/index');
     }

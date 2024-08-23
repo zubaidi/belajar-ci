@@ -1,7 +1,7 @@
     <div style="margin-left:15%;padding:1px 16px;">
     <p class="title-data">Edit Data Peserta Event</p>
         <div>
-            <form action="<?= base_url('backend/pendaftaran/edit_peserta_aksi')?>" method="post">
+            <form action="<?= base_url('backend/pendaftaran/edit_peserta_aksi/'.$peserta_data->id)?>" method="post">
                 <label for="peserta">ID Peserta</label>
                 <input type="text" id="idpeserta" name="idpeserta" value="<?= $peserta_data->id; ?>" disabled>
                 <label for="peserta">Lomba yang akan diikuti </label>
